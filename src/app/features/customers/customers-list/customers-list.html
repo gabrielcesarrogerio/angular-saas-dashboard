@@ -1,0 +1,12 @@
+<h2>Customers</h2>
+
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="error">Error loading customers</div>
+
+<ul *ngIf="!loading && !error">
+  <li *ngFor="let customer of customers">
+    <a [routerLink]="['/customers', customer.id]">
+      {{ customer.name }} ({{ customer.status }})
+    </a>
+  </li>
+</ul>

@@ -1,59 +1,115 @@
-# AngularSaasDashboard
+# Angular SaaS Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+A modern **B2B SaaS dashboard** built with **Angular** and **RxJS**, focused on clean architecture, scalability, and real-world enterprise patterns.
 
-## Development server
+This project was created to demonstrate best practices for Angular applications commonly used by EU and UK-based companies.
 
-To start a local development server, run:
+---
+
+## 🚀 Features
+
+* Modular and scalable architecture
+* Standalone components (Angular 16+)
+* Lazy-loaded routes
+* Mock authentication flow
+* Dashboard layout (sidebar + toolbar)
+* Example CRUD feature (Customers)
+* Loading and error states
+* Clean and maintainable codebase
+
+---
+
+## 🧱 Architecture
+
+The project follows a **feature-based architecture**, commonly adopted in large Angular codebases.
+
+```text
+src/app
+ ├── core/
+ │    ├── services/
+ │    ├── guards/
+ │    └── interceptors/
+ ├── features/
+ │    ├── auth/
+ │    ├── dashboard/
+ │    └── customers/
+ ├── shared/
+ │    ├── components/
+ │    └── pipes/
+ └── app.routes.ts
+```
+
+* **core**: singleton services, guards, interceptors
+* **features**: business domains and pages
+* **shared**: reusable UI components and utilities
+
+---
+
+## 🛠️ Tech Stack
+
+* Angular 16+
+* TypeScript
+* RxJS
+* SCSS
+* Angular Router
+* Mock API (in-memory or local mock service)
+
+---
+
+## ▶️ Getting Started
+
+### Prerequisites
+
+* Node.js 18+
+* Angular CLI
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser at:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📸 Screenshots
 
-## Building
+> Screenshots will be added as the project evolves.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🎯 Project Goals
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project aims to showcase:
 
-## Running unit tests
+* Real-world Angular patterns
+* Clean and readable code
+* Scalable frontend architecture
+* Readiness for remote and international teams
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 📄 License
 
-## Running end-to-end tests
+This project is for demonstration and portfolio purposes.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 👤 Author
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+**Gabriel Rogério**
+Frontend Engineer (Angular)
+5+ years of experience
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* LinkedIn: [https://www](https://www)
